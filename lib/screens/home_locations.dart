@@ -73,8 +73,8 @@ class _CommentLocationsViewState extends State<CommentLocationsView> {
               return Marker(
                 markerId: markerId,
                 position: LatLng(
-                  coordinate['latitud']?.toDouble(),
-                  coordinate['longitud']?.toDouble(),
+                  double.parse(coordinate['latitud']),
+                  double.parse(coordinate['longitud']),
                 ),
                 infoWindow: InfoWindow(
                   title: coordinate['tema'], // Nombre que deseas mostrar
