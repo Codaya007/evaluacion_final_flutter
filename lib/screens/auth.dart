@@ -84,6 +84,7 @@ class _AuthScreenState extends State<AuthScreen> {
         const SizedBox(
           height: 20,
         ),
+        /**
         InputTextFieldWidget(
             registerationController.lastnameController, 'Apellidos'),
         const SizedBox(
@@ -103,13 +104,13 @@ class _AuthScreenState extends State<AuthScreen> {
             registerationController.birthdayController, 'Fecha de nacimiento'),
         const SizedBox(
           height: 20,
-        ),
+        ), **/
         InputTextFieldWidget(registerationController.emailController, 'Email'),
         const SizedBox(
           height: 20,
         ),
         InputTextFieldWidget(
-            registerationController.passwordController, 'Contraseña'),
+            registerationController.passwordController, 'Clave'),
         const SizedBox(
           height: 20,
         ),
@@ -127,11 +128,11 @@ class _AuthScreenState extends State<AuthScreen> {
         const SizedBox(
           height: 20,
         ),
-        InputTextFieldWidget(loginController.emailController, 'Email'),
+        InputTextFieldWidget(loginController.emailController, 'Usuario'),
         const SizedBox(
           height: 20,
         ),
-        InputTextFieldWidget(loginController.passwordController, 'Contraseña'),
+        InputTextFieldWidget(loginController.passwordController, 'Clave'),
         const SizedBox(
           height: 20,
         ),
