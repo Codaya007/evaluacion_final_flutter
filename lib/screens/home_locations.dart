@@ -69,10 +69,16 @@ class _CommentLocationsViewState extends State<CommentLocationsView> {
               zoom: 13,
             ),
             markers: _coordinates.map((coordinate) {
+              final MarkerId markerId = MarkerId(coordinate['external_id']);
               return Marker(
-                markerId: MarkerId(coordinate['external_id']),
-                position: LatLng(coordinate['latitud']?.toDouble(),
-                    coordinate['longitud']?.toDouble()),
+                markerId: markerId,
+                position: LatLng(
+                  coordinate['latitud']?.toDouble(),
+                  coordinate['longitud']?.toDouble(),
+                ),
+                infoWindow: InfoWindow(
+                  title: coordinate['tema'], // Nombre que deseas mostrar
+                ),
               );
             }).toSet(),
           ),
