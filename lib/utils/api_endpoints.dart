@@ -2,7 +2,7 @@ class ApiEndPoints {
   static final String baseUrl = 'http://10.20.139.221:3041/api';
 
   static _AuthEndPoints authEndpoints = _AuthEndPoints();
-  static _PointsEndPoints crudsEndpoints = _PointsEndPoints();
+  static _PointsEndPoints points = _PointsEndPoints();
 }
 
 class _AuthEndPoints {

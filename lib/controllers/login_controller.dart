@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:evaluacion_final_flutter/screens/home_locations.dart';
 import 'package:evaluacion_final_flutter/utils/api_endpoints.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -47,7 +48,8 @@ class LoginController extends GetxController {
 
           emailController.clear();
           passwordController.clear();
-          // Get.off(const PointsScreen());
+
+          Get.off(CommentLocationsView());
 
           showDialog(
               context: Get.context!,

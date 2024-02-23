@@ -49,6 +49,8 @@ android {
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+         // Esto lo añadí por lo de google maps
+        minSdkVersion 20  
     }
 
     buildTypes {
