@@ -1,17 +1,15 @@
 class ApiEndPoints {
-  // static final String baseUrl = 'http://localhost:3000';
-  static final String baseUrl = 'http://192.168.0.104:3000';
+  static final String baseUrl = 'http://10.20.139.221:3041/api';
 
   static _AuthEndPoints authEndpoints = _AuthEndPoints();
-  static _CrudsEndPoints crudsEndpoints = _CrudsEndPoints();
+  static _PointsEndPoints crudsEndpoints = _PointsEndPoints();
 }
 
 class _AuthEndPoints {
-  final String registerEmail = '/users/auth/register';
-  final String loginEmail = '/accounts/login';
+  final String registerEmail = '/registro';
+  final String loginEmail = '/autenticar';
 }
 
-class _CrudsEndPoints {
-  final String news = '/news';
-  final String comments = '/comments';
+class _PointsEndPoints {
+  final String getCoordinates = '/listado/nro_guia';
 }
